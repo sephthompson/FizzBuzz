@@ -9,11 +9,22 @@
     tools:context=".MainActivity" >
 
 	<TextView
-        android:text="TextView_Main"
-        android:id="@+id/fizzyOutput"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scrollbars="vertical" >
+	    android:id="@+id/fizzyOutput"
+	    android:layout_width="fill_parent"
+	    android:layout_height="350dp"
+	    android:scrollbars="vertical"
+	    android:text="TextView_Main" >
+
 	</TextView>
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/fizzyOutput"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:text="Go!" />
 
 </RelativeLayout>
