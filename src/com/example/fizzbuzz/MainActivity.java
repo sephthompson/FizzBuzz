@@ -32,14 +32,20 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		Button btn1 = (Button) findViewById(R.id.button1);
-		EditText etxt1 = (EditText) findViewById(R.id.editText1);
+		final EditText etxt1 = (EditText) findViewById(R.id.editText1);
 		
 		btn1.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				int value = 0;
+				// Just the toast.
 				Toast.makeText(MainActivity.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
+				
+				// Convert from Editable to String so parseInt can handle it
+				value = Integer.parseInt(etxt1.getText().toString());
+				
+				// Pass value to FizzBuzz
 				fbOut.setText(FizzBuzz.fbPrint(value));
 			}
 		});
