@@ -4,11 +4,7 @@ package com.example.fizzbuzz;
 
 public class FizzBuzz {
 
-	public static void main(String[] args) {
-		fbPrint();
-	}
-
-	public static CharSequence fbPrint() {
+	public static CharSequence fbPrint(int x) {
 
 		/*
 		 * Because this is in its own class, we do not have access to the
@@ -18,7 +14,7 @@ public class FizzBuzz {
 
 		String print = "";
 
-		for (int i = 1; i < 100; i++) {
+		for (int i = 1; i < x; i++) {
 			if (i % 15 == 0) {
 				print += "FizzBuzz\n";
 			} else if (i % 3 == 0) {

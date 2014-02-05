@@ -12,6 +12,7 @@ public final class R {
     }
     public static final class color {
         public static final int border=0x7f070000;
+        public static final int edittext1=0x7f070001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -27,8 +28,9 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090002;
+        public static final int action_settings=0x7f090003;
         public static final int button1=0x7f090001;
+        public static final int editText1=0x7f090002;
         public static final int fizzyOutput=0x7f090000;
     }
     public static final class layout {
@@ -40,7 +42,8 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int btn1=0x7f050004;
+        public static final int btn1=0x7f050005;
+        public static final int editText1=0x7f050004;
         public static final int hello_world=0x7f050002;
         public static final int textview1=0x7f050003;
     }
