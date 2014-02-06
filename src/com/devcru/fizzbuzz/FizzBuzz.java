@@ -1,4 +1,4 @@
-package com.example.fizzbuzz;
+package com.devcru.fizzbuzz;
 
 // This is if you wanted to decouple the business logic away from the Controller (MainActivity) into a separate class.
 

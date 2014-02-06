@@ -1,4 +1,6 @@
-package com.example.fizzbuzz;
+package com.devcru.fizzbuzz;
+
+import com.devcru.fizzbuzz.R;
 
 import android.app.Activity;
 import android.content.Intent;
