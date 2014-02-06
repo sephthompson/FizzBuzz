@@ -24,7 +24,6 @@ public class MainActivity extends Activity {
 		fbOut.setMovementMethod(new ScrollingMovementMethod());
 
 		fbOut.setText("Go!\n");
-
 	}
 
 	@Override
@@ -38,12 +37,21 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				
+				// Initialize int
 				int value = 0;
-				// Just the toast.
+				
+				// Debug toast
 				Toast.makeText(MainActivity.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
 				
 				// Convert from Editable to String so parseInt can handle it
-				value = Integer.parseInt(etxt1.getText().toString());
+				// Remember to catch NumberFormatException parseInt throws
+				try {
+					value = Integer.parseInt(etxt1.getText().toString());
+				} catch (NumberFormatException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
 				// Pass value to FizzBuzz
 				fbOut.setText(FizzBuzz.fbPrint(value));

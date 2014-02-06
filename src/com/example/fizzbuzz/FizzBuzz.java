@@ -14,18 +14,20 @@ public class FizzBuzz {
 
 		String print = "";
 
-		for (int i = 1; i < x; i++) {
-			if (i % 15 == 0) {
-				print += "FizzBuzz\n";
-			} else if (i % 3 == 0) {
-				print += "Fizz\n";
-			} else if (i % 5 == 0) {
-				print += "Buzz\n";
-			} else
-				print += i + "\n";
+		if ((x > 0) && (x < 1000)) {
+			for (int i = 1; i <= x; i++) {
+				if (i % 15 == 0) {
+					print += "FizzBuzz\n";
+				} else if (i % 3 == 0) {
+					print += "Fizz\n";
+				} else if (i % 5 == 0) {
+					print += "Buzz\n";
+				} else
+					print += i + "\n";
+			}
+			return print;
 		}
-
-		return print;
+		else return "Please enter a number between 1 and 999!";
 
 	}
 
