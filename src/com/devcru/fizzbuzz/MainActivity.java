@@ -38,32 +38,32 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		Button btn1 = (Button) findViewById(R.id.button1);
 		final EditText etxt1 = (EditText) findViewById(R.id.editText1);
-		
+
 		btn1.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				
-				// Initialize int
+
+				// Initialize
 				int value = 0;
-				
-				// Debug toast
-				Toast.makeText(MainActivity.this, "Done!", Toast.LENGTH_SHORT).show();
-				
+
 				// Convert from Editable to String so parseInt can handle it
 				// Remember to catch NumberFormatException parseInt throws
 				try {
 					value = Integer.parseInt(etxt1.getText().toString());
+					// Debug toast
+					Toast.makeText(MainActivity.this, "Done!", Toast.LENGTH_SHORT).show();
 				} catch (NumberFormatException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+					Toast.makeText(MainActivity.this, "Please enter a valid integer.",
+							Toast.LENGTH_SHORT).show();
+					// e.printStackTrace();
 				}
-				
+
 				// Pass value to FizzBuzz
 				fbOut.setText(FizzBuzz.fbPrint(value));
 			}
 		});
-		
+
 		return true;
 	}
 

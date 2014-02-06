@@ -26,8 +26,8 @@ public class FizzBuzz {
 					print += i + "\n";
 			}
 			return print;
-		}
-		else return "Please enter a number between 1 and 999!";
+		} else
+			return "Please enter a number between 1 and 999!";
 
 	}
 

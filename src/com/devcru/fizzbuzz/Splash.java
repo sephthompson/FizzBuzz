@@ -14,17 +14,17 @@ public class Splash extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_splash);
-	
-	    new Handler().postDelayed(new Runnable() {
-	    	@Override
-	    	public void run() {
-	    		Intent mainIntent = new Intent(Splash.this, MainActivity.class);
-	    		Splash.this.startActivity(mainIntent);
-	    		Splash.this.finish();
-	    	}
-	    }, SPLASH_DISPLAY_LENGTH);
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_splash);
+
+		new Handler().postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				Intent mainIntent = new Intent(Splash.this, MainActivity.class);
+				Splash.this.startActivity(mainIntent);
+				Splash.this.finish();
+			}
+		}, SPLASH_DISPLAY_LENGTH);
 	}
 
 }

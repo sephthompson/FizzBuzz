@@ -6,7 +6,7 @@
     <string name="action_settings">Settings (there are none)</string>
     <string name="hello_world">Hello world!</string>
     <string name="textview1">TextView_Main</string>
-    <string name="editText1">Enter a #!</string>
+    <string name="editText1">enter #</string>
     <string name="btn1">Go!</string>
 
 </resources>
