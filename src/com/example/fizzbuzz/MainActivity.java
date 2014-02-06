@@ -23,7 +23,11 @@ public class MainActivity extends Activity {
 		fbOut = (TextView) findViewById(R.id.fizzyOutput);
 		fbOut.setMovementMethod(new ScrollingMovementMethod());
 
-		fbOut.setText("Go!\n");
+		fbOut.setText("This will count up to the number you specify.\n\n"
+				+ "For every 3rd number, it will say, \"Fizz.\"\n"
+				+ "For every 5th number, it will say, \"Buzz.\"\n"
+				+ "For every 15th number, it will say, \"FizzBuzz.\"\n\n"
+				+ "Enter a number and hit Go!\n");
 	}
 
 	@Override
@@ -42,7 +46,7 @@ public class MainActivity extends Activity {
 				int value = 0;
 				
 				// Debug toast
-				Toast.makeText(MainActivity.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MainActivity.this, "Done!", Toast.LENGTH_SHORT).show();
 				
 				// Convert from Editable to String so parseInt can handle it
 				// Remember to catch NumberFormatException parseInt throws
