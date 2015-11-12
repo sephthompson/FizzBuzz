@@ -1,4 +1,3 @@
 # FizzBuzz
-FizzBuzz app for Android
-xcvcv
-sgsdfgdsfdsfdsgfgsdf
+
+Adding a little fizz to Android.
